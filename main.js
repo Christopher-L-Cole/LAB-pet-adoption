@@ -240,3 +240,54 @@ const pets = [
       imageUrl: "http://lsae2.iypcdn.com/static//modules/uploads/photos/language1/dino-live-22.jpg?119"
     }
   ];
+
+const myFunction = (parameter) => {
+  console.log(parameter)
+}
+// how must functions look in professions. Fat arrow functions
+// could have as many parameters as we want
+const myMessage = "Touch grass!"
+
+myFunction(myMessage)
+// sent in our parameter
+  const appDiv = document.querySelector("#app")
+
+  let domString = ""
+  for(pet of pets){
+    domString += `<div class="card" style="width: 18rem;">
+      <div class="card-header">
+        ${pet.name}
+      </div>
+      <img src="${pet.imageUrl}" class="card-img-top" alt="...">
+      <div class="card-body">
+      <h5 class="card-title">${pet.color}</h5>
+        <p class="card-text">${pet.specialSkill}</p>
+      </div>
+      <div class="card-body">
+      </div>
+      <div class="card-footer text-body-secondary">
+      ${pet.type}
+     </div>
+    </div>`
+  }
+
+  appDiv.innerHTML = domString
+
+  const typeButton = document.querySelector("#type")
+
+
+  veganButton.addEventListener('click', () => {
+
+  })
+  veganButton.addEventListener()
+  // event type is a click sent in as a string
+  console.log("Cheese for Cats");
+
+  // need to make a filter for the buttons somehow ugh.
+
+
+
+
+
+ 
+  
