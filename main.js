@@ -241,24 +241,15 @@ const pets = [
     }
   ];
 
-const myFunction = (parameter) => {
-  console.log(parameter)
-}
-// how must functions look in professions. Fat arrow functions
-// could have as many parameters as we want
-const myMessage = "Touch grass!"
-
-myFunction(myMessage)
-// sent in our parameter
-  const appDiv = document.querySelector("#app")
-
+const renderToDom = (array) => {
   let domString = ""
-  for(pet of pets){
-    domString += `<div class="card" style="width: 18rem;">
+
+  for(pet of array){
+    domString += `<div class="card" style="width: 18rem">
       <div class="card-header">
         ${pet.name}
       </div>
-      <img src="${pet.imageUrl}" class="card-img-top" alt="...">
+      <img src="${pet.imageUrl}" class="card-img-top" alt="${pet.name}">
       <div class="card-body">
       <h5 class="card-title">${pet.color}</h5>
         <p class="card-text">${pet.specialSkill}</p>
@@ -270,20 +261,40 @@ myFunction(myMessage)
      </div>
     </div>`
   }
-
+  const appDiv = document.querySelector("#app")
   appDiv.innerHTML = domString
+}
+renderToDom(pets)
 
-  const typeButton = document.querySelector("#type")
+  const dogButton = document.querySelector("#Dog")
+  const catButton = document.querySelector("#Cat")
+  const dinoButton = document.querySelector("#Dino")
 
+  
+  const filter = (array, animalType) => { 
+    let petArray = [];
+    
+    for (pet of array)
+    if(pet.type === animalType){
+    petArray.push(pet)
+  }
+  renderToDom(petArray)
+}
 
-  veganButton.addEventListener('click', () => {
+dogButton.addEventListener('click', () => {
+  filter(pets, "dog")
+    }) 
 
-  })
-  veganButton.addEventListener()
-  // event type is a click sent in as a string
-  console.log("Cheese for Cats");
+catButton.addEventListener('click', () => {
+  filter(pets, "cat")
+})
 
-  // need to make a filter for the buttons somehow ugh.
+dinoButton.addEventListener('click', () => {
+  filter(pets, "dino")
+})
+ 
+
+  
 
 
 
