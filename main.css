@@ -1,0 +1,11 @@
+#app {
+    border: 5px solid burlywood;
+    display: flex;
+    flex-flow: wrap;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.myAnimalCard {
+    margin-bottom: 10px;
+}

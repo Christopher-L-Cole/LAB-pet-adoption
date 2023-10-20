@@ -245,7 +245,7 @@ const renderToDom = (array) => {
   let domString = ""
 
   for(pet of array){
-    domString += `<div class="card" style="width: 18rem">
+    domString += `<div class="card myAnimalCard" style="width: 18rem">
       <div class="card-header">
         ${pet.name}
       </div>
