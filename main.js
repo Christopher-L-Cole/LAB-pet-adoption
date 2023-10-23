@@ -271,111 +271,37 @@ const pets = [
       "http://lsae2.iypcdn.com/static//modules/uploads/photos/language1/dino-live-22.jpg?119",
   },
 ];
+// this is where we target the element with an id of "app" within the HTML file. we passed app through the query selector. we used it to search everywhere.
+const targetingApp = document.querySelector("#app");
+app.innerHTML = "Hello puppy!"; // we set the inner HTML text to Hello Puppy
 
-const app = document.querySelector("#app");
+const renderToDom = () => {
 
-const renderToDom = (array) => {
-  let domString = "";
-
-  for (object of array) {
-    domString += `<div class="card" style="width: 18rem;">
-        <div class="card-header">${object.name}
-        </div>
-        <img src=${object.imageUrl} class="card-img-top" alt="..."> 
-        <div class="card-body"> 
-          <h5 class="card-title">${object.color}</h5>
-          <p class="card-text">${object.specialSkill}</p>
-        </div> 
-        <div class=${object.type} class="card-footer" >${object.type}
-        </div>
-        <a href="#" class="btn btn-outline-danger" id="delete--${object.id}">Delete</a>
-      </div>`;
-  }
-  app.innerHTML = domString;
-};
-renderToDom(pets);
-
-const dogButton = document.querySelector("#dog");
-const catButton = document.querySelector("#cat");
-const dinoButton = document.querySelector("#dino");
-const petsButton = document.querySelector("#pets");
-const form = document.querySelector("form");
-
-const filter1 = () => {
-  let dogArray = [];
-
-  for (pet of pets) {
-    if (pet.type === "Dog") {
-      dogArray.push(pet);
-    }
-  }
-  renderToDom(dogArray);
+let domString = ""; 
+  for (const pet of pets) {
+  domString += `<div class="card" style="width: 18rem;">
+      <img src=${pet.imageUrl} class="card-img-top" alt=${pet.name}>
+      <div class="card-body">
+        <h5 class="card-title">${pet.name}</h5>
+        <p class="card-text">${pet.color}</p>
+        <p class="card-text">${pet.specialSkill}</p>
+        <p class="card-text">${pet.type}</p>
+      </div>
+    </div>`;
 };
 
-const filter2 = () => {
-  let catArray = [];
+targetingApp.innerHTML = domString;
+app.innerHTML = domString;
+}
+renderToDom(pets)
 
-  for (pet of pets) {
-    if (pet.type === "Cat") {
-      catArray.push(pet);
-    }
-  }
-  renderToDom(catArray);
-};
+const dogButton = document.querySelector("#Dog") 
+dogButton.addEventListener("click" , () => {
+  filter(pets, "Dog")
+})
+// const filterDog = (array, dog) =>{
+//   let dogtype = array.filter(dog => pets.type = "dog")
 
-const filter3 = () => {
-  let dinoArray = [];
 
-  for (pet of pets) {
-    if (pet.type === "Dino") {
-      dinoArray.push(pet);
-    }
-  }
-  renderToDom(dinoArray);
-};
 
-const filter4 = () => {
-  let petArray = [];
 
-  for (pet of pets) {
-    if (pet.type === "Dog" || "Cat" || "Dino") {
-      petArray.push(pet);
-    }
-  }
-  renderToDom(petArray);
-};
-
-const createPet = (e) => {
-  e.preventDefault();
-
-  const newPetObject = {
-    id: pets.length + 1,
-    name: document.querySelector("#petName").value,
-    color: document.querySelector("#petColor").value,
-    specialSkill: document.querySelector("#petSpecialSkill").value,
-    type: document.querySelector("#petType").value,
-    imageUrl: document.querySelector("#petImageUrl").value,
-  };
-  pets.push(newPetObject);
-  renderToDom(pets);
-  form.reset();
-};
-
-const deletePet = (event) => {
-  if (event.target.id.includes("delete")) {
-    const [, id] = event.target.id.split("--");
-
-    const index = pets.findIndex((object) => object.id === Number(id));
-
-    pets.splice(index, 1);
-
-    renderToDom(pets);
-  }
-};
-
-dogButton.addEventListener("click", filter1);
-catButton.addEventListener("click", filter2);
-dinoButton.addEventListener("click", filter3);
-petsButton.addEventListener("click", filter4);
-form.addEventListener("submit", createPet);
-app.addEventListener("click", deletePet);
