@@ -276,67 +276,53 @@ const targetingApp = document.querySelector("#app");
 app.innerHTML = "Hello puppy!"; // we set the inner HTML text to Hello Puppy
 
 const renderToDom = (array) => {
+  let domString = ""
 
-let domString = ""; 
-  for (const pet of pets) {
-  domString += `<div class="card" style="width: 18rem;">
-      <img src=${pet.imageUrl} class="card-img-top" alt=${pet.name}>
-      <div class="card-body">
-        <h5 class="card-title">${pet.name}</h5>
-        <p class="card-text">${pet.color}</p>
-        <p class="card-text">${pet.specialSkill}</p>
-        <p class="card-text">${pet.type}</p>
+  for(pet of array){
+    domString += `<div class="card myAnimalCard" style="width: 18rem">
+      <div class="card-header">
+        ${pet.name}
       </div>
-    </div>`;
-};
-
-targetingApp.innerHTML = domString;
+      <img src="${pet.imageUrl}" class="card-img-top" alt="${pet.name}">
+      <div class="card-body">
+      <h5 class="card-title">${pet.color}</h5>
+        <p class="card-text">${pet.specialSkill}</p>
+      </div>
+      <div class="card-body">
+      </div>
+      <div class="card-footer text-body-secondary">
+      ${pet.type}
+     </div>
+    </div>`
+  }
+  const appDiv = document.querySelector("#app")
+  appDiv.innerHTML = domString
 }
-
 renderToDom(pets)
 
-const dogButton = document.querySelector("#Dog")
-const catButton = document.querySelector("#Cat")
-const dinoButton = document.querySelector("#Dino")
-const allButton = document.querySelector("#All")
+  const dogButton = document.querySelector("#Dog")
+  const catButton = document.querySelector("#Cat")
+  const dinoButton = document.querySelector("#Dino")
 
-const filter = (animalType, petArray) => {
-  console.log("inFilter", animalType, petArray);
-  // let filteredPets = petArray.filter((pet) => pet.type === animalType);
-  let filterPets = [];
-  for(pet of petArray) {
-    if(pet.type === animalType) {
-      filterPets.push(pet)
-    }
-  };
   
-  renderToDom(filterPets);
-};
-
-
- 
+  const filter = (array, animalType) => { 
+    let petArray = [];
+    
+    for (pet of array)
+    if(pet.type === animalType){
+    petArray.push(pet)
+  }
+  renderToDom(petArray)
+}
 
 dogButton.addEventListener('click', () => {
-  filter("dog", pets);
-});
+  filter(pets, "dog")
+    }) 
 
 catButton.addEventListener('click', () => {
-  filter("cat", pets);
-});
+  filter(pets, "cat")
+})
 
 dinoButton.addEventListener('click', () => {
-  filter("dino", pets);
-});
-
-allButton.addEventListener('click', () => {
-  renderToDom(pets); // Show all pets when "All" is clicked
-});
-
-
-
-
-
-
-
-
-
+  filter(pets, "dino")
+})
