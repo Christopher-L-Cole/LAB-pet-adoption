@@ -1,11 +1,11 @@
 #app {
-    border: 5px solid burlywood;
     display: flex;
-    flex-flow: wrap;
-    padding: 20px;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around
 }
 
-.myAnimalCard {
-    margin-bottom: 10px;
-}
+.btn-primary {
+  background-color: rgb(65, 98, 174);
+};
+
