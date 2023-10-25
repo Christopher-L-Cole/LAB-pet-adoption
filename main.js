@@ -275,7 +275,7 @@ const pets = [
 const targetingApp = document.querySelector("#app");
 app.innerHTML = "Hello puppy!"; // we set the inner HTML text to Hello Puppy
 
-const renderToDom = () => {
+const renderToDom = (array) => {
 
 let domString = ""; 
   for (const pet of pets) {
@@ -291,16 +291,51 @@ let domString = "";
 };
 
 targetingApp.innerHTML = domString;
-app.innerHTML = domString;
 }
+
 renderToDom(pets)
 
-const dogButton = document.querySelector("#Dog") 
-dogButton.addEventListener("click" , () => {
-  filter(pets, "Dog")
-})
-// const filterDog = (array, dog) =>{
-//   let dogtype = array.filter(dog => pets.type = "dog")
+const dogButton = document.querySelector("#Dog")
+const catButton = document.querySelector("#Cat")
+const dinoButton = document.querySelector("#Dino")
+const allButton = document.querySelector("#All")
+
+const filter = (animalType, petArray) => {
+  console.log("inFilter", animalType, petArray);
+  // let filteredPets = petArray.filter((pet) => pet.type === animalType);
+  let filterPets = [];
+  for(pet of petArray) {
+    if(pet.type === animalType) {
+      filterPets.push(pet)
+    }
+  };
+  console.log("filterPets", filterPets)
+  renderToDom(filterPets);
+};
+
+
+ 
+
+dogButton.addEventListener('click', () => {
+  filter("dog", pets);
+});
+
+catButton.addEventListener('click', () => {
+  filter("cat", pets);
+});
+
+dinoButton.addEventListener('click', () => {
+  filter("dino", pets);
+});
+
+allButton.addEventListener('click', () => {
+  renderToDom(pets); // Show all pets when "All" is clicked
+});
+
+
+
+
+
 
 
 
