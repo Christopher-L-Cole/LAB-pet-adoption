@@ -309,7 +309,7 @@ const filter = (animalType, petArray) => {
       filterPets.push(pet)
     }
   };
-  console.log("filterPets", filterPets)
+  
   renderToDom(filterPets);
 };
 
