@@ -330,3 +330,26 @@ dinoButton.addEventListener('click', () => {
 allButton.addEventListener("click" , () => {
   renderToDom(pets)
 })
+
+//create a function that grabs all the values from the form, pushes the new object to the array, then repaints the DOM with the new teammate
+const form = document.querySelector('form')
+  
+
+const newPet = (event) => {
+  event.preventDefault()
+
+  const newPetObj = {
+    id: pets.length + 1, 
+    name: document.querySelector("#petName").value,
+    color: document.querySelector("#petColor").value,
+    specialSkill: document.querySelector("#petSkill").value,
+    type: document.querySelector('input[name="exampleRadios"]:checked').value,
+    imageUrl: document.querySelector("#petImg").value,
+   }; 
+
+  pets.push(newPetObj);
+  renderToDom(pets);
+  form.reset();
+}
+
+form.addEventListener('submit', newPet)
