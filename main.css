@@ -1,11 +1,29 @@
+body {
+    background-color: #8f4731;
+    color: #52494c;;
+}
+h2 {
+    text-align: center;
+    
+}
+
+
+div {
+    padding: 5px 5px;
+    background-color: #7b7d2a;
+    color: #52494c;
+  }
+
 #app {
+    margin-block: 4px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: space-around
+    flex-flow: wrap;
+    padding: 15px;
+    justify-content: space-around 
 }
 
 .btn-primary {
-  background-color: rgb(65, 98, 174);
+  background-color: #2d5b6b;
 };
+
 

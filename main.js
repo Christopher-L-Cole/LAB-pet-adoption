@@ -15,7 +15,7 @@ const pets = [
     specialSkill:
       "Just picks the tomatoes off of a sandwich instead of requesting a whole new sandwich.",
     type: "dino",
-    imageUrl: "http://www.jozilife.co.za/wp-content/uploads/The-Dino-Expo.jpg",
+    imageUrl: "https://lovepawz.com/cdn/shop/products/B18F00ACEABB12FB9436CF73C4B9E0B9.jpg?v=1635181961",
   },
   {
     id: 3,
@@ -293,6 +293,7 @@ const renderToDom = (array) => {
       <div class="card-footer text-body-secondary">
       ${pet.type}
      </div>
+     <a href="#" class="btn btn-outline-danger" id="delete--${pet.id}">Delete</a>
     </div>`
   }
   const appDiv = document.querySelector("#app")
@@ -374,16 +375,24 @@ form.addEventListener('submit', newPet)
 
 
 //this isn't right yet//
+// // 1. Target the app div (used form for our situation)
+//const app = document.querySelector("#app");
 
-const deletePet = (event) => {
-  app.addEventListener("click", (event))
-  if(event.target.id.includes("delete")){
-    const [,id] = event.target.id.split("--");
-    const index = pets.findIndex(obj => obj.id === Number(id));
-    console.log(index);
-    pets.splice(index, 1);
-    console.log(pets.length);
-    renderToDom(pets);
+// const deletePet = (event) => {
+  app.addEventListener("click", (e) => { //// 2. Add an event listener to capture clicks
+  
+    if(e.target.id.includes("delete")) {  //// 3. check e.target.id includes "delete"
+    const [, id] = e.target.id.split("--");
+    const index = pets.findIndex(e => e.id === Number(id)); //// 4. add logic to remove from array. // .findIndex is an array method
+    
+    pets.splice(index, 1); //// .splice modifies the original array
+    
+    renderToDom(pets); // // 5. Repaint the DOM with the updated array
   }
+})
+const startApp = () => {
+  renderToDom(pets);
 }
+
+startApp();
 app.addEventListener("click", deletePet);
