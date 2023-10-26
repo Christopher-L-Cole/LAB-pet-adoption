@@ -15,7 +15,7 @@ const pets = [
     specialSkill:
       "Just picks the tomatoes off of a sandwich instead of requesting a whole new sandwich.",
     type: "dino",
-    imageUrl: "http://www.jozilife.co.za/wp-content/uploads/The-Dino-Expo.jpg",
+    imageUrl: "https://lovepawz.com/cdn/shop/products/B18F00ACEABB12FB9436CF73C4B9E0B9.jpg?v=1635181961",
   },
   {
     id: 3,
