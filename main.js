@@ -303,7 +303,7 @@ renderToDom(pets)
   const dogButton = document.querySelector("#Dog")
   const catButton = document.querySelector("#Cat")
   const dinoButton = document.querySelector("#Dino")
-
+  const allButton = document.querySelector("#All")
   
   const filter = (array, animalType) => { 
     let petArray = [];
@@ -325,4 +325,8 @@ catButton.addEventListener('click', () => {
 
 dinoButton.addEventListener('click', () => {
   filter(pets, "dino")
+})
+
+allButton.addEventListener("click" , () => {
+  renderToDom(pets)
 })

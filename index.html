@@ -9,6 +9,26 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
+   <form>
+    <div class="mb-3">
+        <label for="petName" class="form-label">Pet Name</label>
+        <input type="text" class="form-control" id="petName">
+      </div>
+      <div class="mb-3">
+        <label for="petColor" class="form-label">Pet Color</label>
+        <input type="text" class="form-control" id="petColor">
+      </div>
+      <div class="mb-3">
+        <label for="petSkill" class="form-label">Pet's Special Skill</label>
+        <input type="text" class="form-control" id="petSkill">
+      </div>
+      <div class="mb-3">
+        <label for="petImg" class="form-label">Image of Pet (URL)</label>
+        <input type="text" class="form-control" id="petImg">
+      </div>
+
+      <button type="submit" class="btn btn-primary" id="form-submit">Submit</button>
+   </form>   
     <div id="filter-buttons">
         <button type="button" id="Dog" class="btn btn-primary">Dogs</button>
         <button type="button" id="Cat" class="btn btn-primary">Cats</button>
