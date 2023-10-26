@@ -300,19 +300,22 @@ const renderToDom = (array) => {
 }
 renderToDom(pets)
 
-  const dogButton = document.querySelector("#Dog")
+  const dogButton = document.querySelector("#Dog") //So, this line of code is finding the HTML element that has id="Dog" in your webpage and assigning it to the variable dogButton. 
   const catButton = document.querySelector("#Cat")
   const dinoButton = document.querySelector("#Dino")
-
+  const allButton = document.querySelector("#All")
   
-  const filter = (array, animalType) => { 
-    let petArray = [];
+  const filter = (array, animalType) => { //the filter function here has two arguments, the entire array pets and a new one animalType, which we
+    let petArray = []; //initialized an empty array! This array will store the pets that match the specified animalType.
     
-    for (pet of array)
-    if(pet.type === animalType){
-    petArray.push(pet)
+    for (pet of array)// iterates through each pet object in the array. For each pet:
+    if(pet.type === animalType){ //It checks if the pet.type (the type of the current pet) is equal to the animalType. If they match, it means the pet is of the desired type.
+    petArray.push(pet) //so. the entire array, You can use this method to dynamically add elements to an array
   }
   renderToDom(petArray)
+  //After looping through all the pets in the array, the petArray contains only the pets of the specified animalType
+//Finally, the renderToDom(petArray) function is called to update the DOM and display the filtered pets.
+//This function is a simple filter that takes an array of pets and returns a new array containing only pets of a specific type. 
 }
 
 dogButton.addEventListener('click', () => {
@@ -326,3 +329,61 @@ catButton.addEventListener('click', () => {
 dinoButton.addEventListener('click', () => {
   filter(pets, "dino")
 })
+
+allButton.addEventListener("click" , () => {
+  renderToDom(pets)
+})
+
+
+// ****** CREATE ****** //
+// 1. select/target the form on the DOM
+const form = document.querySelector('form')
+  
+// 2. create a function that grabs all the values from the form, pushes the new object to the array, 
+//then repaints the DOM with the new teammate
+const newPet = (event) => {
+  event.preventDefault() //// EVERY TIME YOU CREATE A FORM
+
+  const newPetObj = {
+    id: pets.length + 1, 
+    name: document.querySelector("#petName").value,
+    color: document.querySelector("#petColor").value,
+    specialSkill: document.querySelector("#petSkill").value,
+    type: document.querySelector('input[name="exampleRadios"]:checked').value,
+    imageUrl: document.querySelector("#petImg").value,
+   }; 
+
+  pets.push(newPetObj);
+  renderToDom(pets);
+  form.reset();
+}
+// 3. Add an event listener for the form submit and pass it the function (callback)
+form.addEventListener('submit', newPet)
+
+// ******************** //
+// ****** DELETE ****** //
+// ******************** //
+
+// Here we will be using event bubbling
+// 1. Target the app div
+// 2. Add an event listener to capture clicks
+// 3. check e.target.id includes "delete"
+// 4. add logic to remove from array
+// 5. Repaint the DOM with the updated array
+// 6. Organize code so that everything is in a function except selectors
+
+
+//this isn't right yet//
+
+const deletePet = (event) => {
+  app.addEventListener("click", (event))
+  if(event.target.id.includes("delete")){
+    const [,id] = event.target.id.split("--");
+    const index = pets.findIndex(obj => obj.id === Number(id));
+    console.log(index);
+    pets.splice(index, 1);
+    console.log(pets.length);
+    renderToDom(pets);
+  }
+}
+app.addEventListener("click", deletePet);

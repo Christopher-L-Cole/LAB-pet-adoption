@@ -9,6 +9,51 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
+   <form>
+    <div class="mb-3">
+        <label for="petName" class="form-label">Pet Name</label>
+        <input type="text" class="form-control" id="petName">
+      </div>
+      <div class="mb-3">
+        <label for="petColor" class="form-label">Pet Color</label>
+        <input type="text" class="form-control" id="petColor">
+      </div>
+      <div class="mb-3">
+        <label for="petSkill" class="form-label">Pet's Special Skill</label>
+        <input type="text" class="form-control" id="petSkill">
+      </div>
+      <div class="mb-3">
+        <label for="petImg" class="form-label">Image of Pet (URL)</label> 
+        <!-- //surprised this works^^ -->
+        <input type="text" class="form-control" id="petImg">
+      </div>
+
+        <!-- below is Radio buttons are used if you want to limit the user to just one selection from a list of preset options. -->
+      <div>
+        <h6>Type of Pet</h6>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="catCheck" value="cat" >
+          <label class="form-check-label" for="exampleRadios1">
+            Cat
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="dogCheck" value="dog">
+          <label class="form-check-label" for="exampleRadios2">
+            Dog
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="dinoCheck" value="dino" >
+          <label class="form-check-label" for="exampleRadios3">
+            Dino
+          </label>
+        </div>
+
+     <div>
+      <button type="submit" class="btn btn-primary" id="form-submit">Submit</button>
+   </form>   
+     </div>
     <div id="filter-buttons">
         <button type="button" id="Dog" class="btn btn-primary">Dogs</button>
         <button type="button" id="Cat" class="btn btn-primary">Cats</button>
