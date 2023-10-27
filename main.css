@@ -1,5 +1,5 @@
 body {
-    background-color: #303F9F;
+    background-color: #35140a;
     color: #757575; 
 }
 h2 {
@@ -9,13 +9,12 @@ h2 {
 
 .myAnimalCard {
     margin: 10px 10px;
-    color: #2d5b6b;
-    background-color: #52494c;
+    color: #FFA000;
     -webkit-border-radius: 0px;
     border-radius: 0px;
-    background: #c5d0f2;
-    -webkit-box-shadow: 19px 19px 24px #a7b1ce, -19px -19px 24px #e3efff;
-    box-shadow: 19px 19px 24px #a7b1ce, -19px -19px 24px #e3efff;
+    background: #5b071b;
+    -webkit-box-shadow: 11px 11px 14px #24030b, -11px -11px 14px #920b2b;
+    box-shadow: 11px 11px 14px #24030b, -11px -11px 14px #920b2b;
 }
 
 
@@ -27,7 +26,8 @@ h2 {
 }
 
 .btn-primary {
-  background-color: #536DFE;
+  background-color: #5b410c;
 };
+
 
 
