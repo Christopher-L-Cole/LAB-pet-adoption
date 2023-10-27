@@ -6,7 +6,7 @@ const pets = [
     specialSkill: "Gives sincere apologies.",
     type: "cat",
     imageUrl:
-      "http://kittentoob.com/wp-content/uploads/2015/06/funny-cat-with-a-towel.jpg",
+      "https://static.displate.com/857x1200/displate/2023-03-15/dadeeb74dcc7ed99f2da757226d69818_5670a0e43cfe81ada198f1864a784534.jpg",
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const pets = [
     specialSkill:
       "Just picks the tomatoes off of a sandwich instead of requesting a whole new sandwich.",
     type: "dino",
-    imageUrl: "https://lovepawz.com/cdn/shop/products/B18F00ACEABB12FB9436CF73C4B9E0B9.jpg?v=1635181961",
+    imageUrl: "https://pbs.twimg.com/media/FcZ8ad2WIAIqAYT?format=jpg&name=4096x4096",
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const pets = [
     specialSkill: "Can prove he is a real man by drinking whiskey.",
     type: "dino",
     imageUrl:
-      "https://mydinosaurs.com/wp-content/uploads/2017/02/2-3-600x400.jpg",
+      "https://t4.ftcdn.net/jpg/05/62/06/45/360_F_562064589_qQesV2w41iSUoMkipIcoCfzyNTV4oPwf.jpg",
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ const pets = [
     specialSkill: "Burps minimally.",
     type: "dog",
     imageUrl:
-      "http://cdn.akc.org/content/article-body-image/funny-pembroke_welsh_corgi.jpg",
+      "https://ih1.redbubble.net/image.5216006087.2743/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg",
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ const pets = [
     specialSkill: "Comfortable in the outdoors for up to eight hours.",
     type: "cat",
     imageUrl:
-      "http://www.catster.com/wp-content/uploads/2017/08/A-fluffy-cat-looking-funny-surprised-or-concerned.jpg",
+      "https://m.media-amazon.com/images/I/51oEA3kkcGL._AC_UF894,1000_QL80_.jpg",
   },
   {
     id: 6,
@@ -51,7 +51,7 @@ const pets = [
     specialSkill: "Can read (but cannot understand) Hebrew.",
     type: "dog",
     imageUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/7/7e/Basset_Hound_600.jpg",
+      "https://img.freepik.com/premium-photo/doken-fierce-dog-samurai-japanese-manga-concept-art-sketch-inspired-by-kim-jung-gi_983420-15246.jpg",
   },
   {
     id: 7,
@@ -60,7 +60,7 @@ const pets = [
     specialSkill: "Able to stop chewing ice or whistling on request.",
     type: "cat",
     imageUrl:
-      "https://i.pinimg.com/originals/9d/da/3e/9dda3e5fd2b9886fc3d13ee47f52e8a0.jpg",
+      "https://ih1.redbubble.net/image.4694921378.1754/flat,750x,075,f-pad,750x1000,f8f8f8.jpg",
   },
   {
     id: 8,
@@ -69,7 +69,7 @@ const pets = [
     specialSkill: "Comfortable in the outdoors for up to eight hours.",
     type: "dino",
     imageUrl:
-      "http://www.theouthousers.com/images/jck//ThanosCopter/news/grumpasaur.jpg",
+      "https://t3.ftcdn.net/jpg/05/82/62/74/360_F_582627455_yCcBej5nEAhPMXQFbpejySoex62BiflN.jpg",
   },
   {
     id: 9,
@@ -78,7 +78,7 @@ const pets = [
     specialSkill: "Adept at talking self and others out of fights.",
     type: "cat",
     imageUrl:
-      "https://tailandfur.com/wp-content/uploads/2015/09/40-Amazing-Cat-Funny-Moment-Pictures-Feature-Image.jpg",
+      "https://i.ebayimg.com/images/g/C0IAAOSwmc1kXTGB/s-l1200.jpg",
   },
   {
     id: 10,
@@ -87,7 +87,7 @@ const pets = [
     specialSkill: "Listens attentively to boring stories.",
     type: "cat",
     imageUrl:
-      "https://i.pinimg.com/originals/04/54/92/0454926d39eeb420f4f01948e94e9e41.jpg",
+      "https://static.displate.com/857x1200/displate/2023-03-15/c56d6ba2f2e90a3ba8dc6d9651be1bd0_0bfb43241473a48b700ba39998a16ee2.jpg",
   },
   {
     id: 11,
@@ -96,7 +96,7 @@ const pets = [
     specialSkill: "Can be around food without staring creepily at it.",
     type: "dino",
     imageUrl:
-      "http://www.cantref.com/userfiles/events/walking%20dino.jpg?w=600",
+      "https://storage.prompt-hunt.workers.dev/clf16fguw0001mi08asudaud1_1",
   },
   {
     id: 12,
@@ -105,7 +105,7 @@ const pets = [
     specialSkill: "Does not use excessive acronyms.",
     type: "dog",
     imageUrl:
-      "https://i.pinimg.com/originals/1f/30/8c/1f308c9c108a384b91b39430cc7312e9.jpg",
+      "https://storage.googleapis.com/pai-images/f089720fa4b845568c95fed9b113a002.jpeg",
   },
   {
     id: 13,
@@ -114,9 +114,9 @@ const pets = [
     specialSkill:
       "Expertly quotes and recognizes dialogue from early seasons of The Simpsons.",
     type: "dog",
-    imageUrl:
-      "http://1kjkdg1axrkd2g03cnboj761.wpengine.netdna-cdn.com/wp-content/uploads/2017/12/braydon-anderson-105552-e1512684107659.jpg",
-  },
+    imageUrl: "https://i.etsystatic.com/20407794/r/il/6cc55b/4617170401/il_300x300.4617170401_qkzp.jpg",
+      
+  }, 
   {
     id: 14,
     name: "Samantha",
@@ -124,16 +124,16 @@ const pets = [
     specialSkill: "Always up for dessert.",
     type: "cat",
     imageUrl:
-      "http://3.bp.blogspot.com/-RzIFLsIO-XQ/UFoMLOT66JI/AAAAAAAAVps/JRF98hdA9S8/s640/funny-cat-pictures-016-027.jpg",
+      "https://www.shutterstock.com/shutterstock/photos/2317626267/display_1500/stock-photo-beautiful-samurai-cat-ilustration-colorful-landscape-digital-vector-artwork-2317626267.jpg",
   },
   {
     id: 15,
     name: "Coco",
     color: "Red",
-    specialSkill: "Burps minimally.",
+    specialSkill: "Death from above",
     type: "cat",
     imageUrl:
-      "http://cathumor.net/wp-content/uploads/2013/12/cat-humor-funny-karate-cat-2.jpg",
+      "https://m.media-amazon.com/images/I/61TuOZpT2dL._AC_UF894,1000_QL80_.jpg",
   },
   {
     id: 16,
@@ -142,7 +142,7 @@ const pets = [
     specialSkill: "Drives at a safe rate of speed in snow or rain.",
     type: "dino",
     imageUrl:
-      "https://images.readwrite.com/wp-content/uploads/2018/03/t-rex-dino-quiz-e1490854556549.jpg",
+      "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8b6f44c9-24fa-4a57-8ebd-10d5685a440f/dfl5p7f-c4862301-5124-4e1d-bcbe-e6853112057e.png/v1/fill/w_1280,h_854,q_80,strp/somat_cute_little_dragon_by_somatart_dfl5p7f-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU0IiwicGF0aCI6IlwvZlwvOGI2ZjQ0YzktMjRmYS00YTU3LThlYmQtMTBkNTY4NWE0NDBmXC9kZmw1cDdmLWM0ODYyMzAxLTUxMjQtNGUxZC1iY2JlLWU2ODUzMTEyMDU3ZS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.LbyU52v-d07TwwN_9A6UeoGQEQwK8O97k13idRlDofU",
   },
   {
     id: 17,
@@ -151,7 +151,7 @@ const pets = [
     specialSkill:
       "Does not freak out if you haven’t seen his favorite movie (The Big Lebowski).",
     type: "cat",
-    imageUrl: "http://www.funnycatsite.com/pictures/Close_Up_Yawn.jpg",
+    imageUrl: "https://pieceofmind.ai/cdn/shop/files/samurai-cat-1000-pieces-piece-of-mind-1_d89e4ddf-232b-433b-bf95-2cdc5a625348.jpg?v=1691308193",
   },
   {
     id: 18,
@@ -160,7 +160,7 @@ const pets = [
     specialSkill: "Proficient in air guitar",
     type: "dino",
     imageUrl:
-      "https://www.nation.co.ke/image/view/-/4078922/highRes/1742693/-/maxw/600/-/1453yvh/-/DINO.jpg",
+      "https://storage.prompt-hunt.workers.dev/clf1irw190001l3088deru2qi_1",
   },
   {
     id: 19,
@@ -169,15 +169,15 @@ const pets = [
     specialSkill: "Listens attentively to boring stories.",
     type: "dog",
     imageUrl:
-      "http://dailynewsdig.com/wp-content/uploads/2014/03/Creative-And-Funny-Dog-Stock-Photography-Pictures-2.jpg",
+      "https://img.freepik.com/premium-photo/kawaii-ken-unleashing-dog-samurai-warrior-japanese-manga-concept-art-masterpiece-sty_983420-15281.jpg",
   },
   {
     id: 20,
     name: "Spooky",
     color: "Black",
-    specialSkill: "Uses litter box at appropriate hours.",
+    specialSkill: "Takes two candies from every house when trick or treating, naughty Spooky",
     type: "cat",
-    imageUrl: "http://www.funnycatsite.com/pictures/Lazy_White_Cat.jpg",
+    imageUrl: "https://img.freepik.com/premium-photo/samurai-cat-cute-cat-samurai-cat-illustration-digital-illustration_689053-329.jpg",
   },
   {
     id: 21,
@@ -186,7 +186,7 @@ const pets = [
     specialSkill: "Owns a Nintendo Power Glove.",
     type: "dino",
     imageUrl:
-      "https://img.buzzfeed.com/buzzfeed-static/static/2015-11/2/12/enhanced/webdr15/anigif_enhanced-29802-1446485228-10.gif?crop=250:165;0,0&downsize=715",
+      "https://static.displate.com/280x392/displate/2022-12-27/67dfaa0b05d925a7f54084618c249f47_1a631bc8a6ed1c50d1131e99ab15c341.jpg",
   },
   {
     id: 22,
@@ -194,9 +194,7 @@ const pets = [
     color: "Orange",
     specialSkill: "Is comfortable with jokes about his receding hairline.",
     type: "cat",
-    imageUrl:
-      "http://funnyanimalphoto.com/wp-content/uploads/2013/08/cat_caught_mouse_thegatewaypundit.jpg",
-  },
+    imageUrl: "https://static.displate.com/857x1200/displate/2023-02-24/316d5cb622ff4437c2154bf096d64916_d5bee39edbdf57417972cdd1f9c1b7d3.jpg"  },
   {
     id: 23,
     name: "Buddy",
@@ -204,7 +202,7 @@ const pets = [
     specialSkill: "Enjoys fine wine.",
     type: "dog",
     imageUrl:
-      "http://1.bp.blogspot.com/-VjM0CmtN-vU/T7YX-LXa09I/AAAAAAAADA0/Vt1oGWEG0lw/s1600/sheepdog+border+collie+shakes+off+water+funny+picture+photo+pulling+faces+raspberry+tongue.jpg",
+      "https://storage.googleapis.com/pai-images/869f002f0c584e2ca11b5786a6a09db4.jpeg",
   },
   {
     id: 24,
@@ -214,7 +212,7 @@ const pets = [
       "Participates in karaoke but does not force others to go out to karaoke.",
     type: "dog",
     imageUrl:
-      "http://www.dogbreedplus.com/dog_breeds/images/basset-hound-4.jpg",
+      "https://storage.googleapis.com/pai-images/2cc36d2a656b4ffdabb1962276e058b4.jpeg",
   },
   {
     id: 25,
@@ -223,7 +221,7 @@ const pets = [
     specialSkill: "Knows the words to 4 rap songs.",
     type: "cat",
     imageUrl:
-      "http://funbk.s3.amazonaws.com/wp-content/uploads/2016/06/funny-cat-video-which-will-make-you-laugh-louder.jpg",
+      "https://static.displate.com/857x1200/displate/2023-03-15/e146848f300c5a35c761cb40d918f07a_b553b8cbf771a0712b1c1824477ae138.jpg",
   },
   {
     id: 26,
@@ -232,7 +230,7 @@ const pets = [
     specialSkill: "Cleans himself.",
     type: "dog",
     imageUrl:
-      "https://www.thetrendywhippet.co.uk/wp-content/uploads/2016/11/IMG_1651-600x400.jpg",
+      "https://i1.sndcdn.com/avatars-wkOWpyxpeGFLv0Su-qODNeQ-t500x500.jpg",
   },
   {
     id: 27,
@@ -241,7 +239,7 @@ const pets = [
     specialSkill: "Admits he is wrong",
     type: "dino",
     imageUrl:
-      "https://assets.creationmuseum.org/img/pages/1703-DinoDen-TwoCard.jpg",
+      "https://as2.ftcdn.net/v2/jpg/05/62/88/37/1000_F_562883727_HIFdnDwvArjlxfrviZcNsScdo5ExwY3a.jpg",
   },
   {
     id: 28,
@@ -250,7 +248,7 @@ const pets = [
     specialSkill: "Dances when he has to.",
     type: "cat",
     imageUrl:
-      "https://tailandfur.com/wp-content/uploads/2016/03/40-Scary-and-Funny-Cat-Pictures-8.jpg",
+      "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/790bbde7-8610-4fb3-b49e-1928564da343/dfwuko0-a9faa87b-8c5f-4e04-a34b-5d52f0c6fda5.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzc5MGJiZGU3LTg2MTAtNGZiMy1iNDllLTE5Mjg1NjRkYTM0M1wvZGZ3dWtvMC1hOWZhYTg3Yi04YzVmLTRlMDQtYTM0Yi01ZDUyZjBjNmZkYTUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.KlKgcgMdrzISuR8Lhr2Zu2edtVzbXLvKnFWShA1ka0I",
   },
   {
     id: 29,
@@ -259,7 +257,7 @@ const pets = [
     specialSkill:
       "Gives hugs with appropriate pressure and for the right length of time.",
     type: "cat",
-    imageUrl: "http://img.izismile.com/img/img2/20090219/cats_02.jpg",
+    imageUrl: "https://static.displate.com/857x1200/displate/2023-03-15/c0c79d2b1334a849bc96866137c63c71_dc0797f357cf81fea083e6511e672cc3.jpg",
   },
   {
     id: 30,
@@ -268,7 +266,7 @@ const pets = [
     specialSkill: "Doesn’t get weirded out by the word “moist.”",
     type: "dino",
     imageUrl:
-      "http://lsae2.iypcdn.com/static//modules/uploads/photos/language1/dino-live-22.jpg?119",
+      "https://pbs.twimg.com/media/FdsFREZXEBQ5Pd2?format=jpg&name=4096x4096",
   },
 ];
 // this is where we target the element with an id of "app" within the HTML file. we passed app through the query selector. we used it to search everywhere.
