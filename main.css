@@ -1,6 +1,6 @@
 body {
-    background-color: #8f4731;
-    color: #52494c;; 
+    background-color: #303F9F;
+    color: #757575; 
 }
 h2 {
     text-align: center;
@@ -11,6 +11,11 @@ h2 {
     margin: 10px 10px;
     color: #2d5b6b;
     background-color: #52494c;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background: #c5d0f2;
+    -webkit-box-shadow: 19px 19px 24px #a7b1ce, -19px -19px 24px #e3efff;
+    box-shadow: 19px 19px 24px #a7b1ce, -19px -19px 24px #e3efff;
 }
 
 
@@ -22,7 +27,7 @@ h2 {
 }
 
 .btn-primary {
-  background-color: #2d5b6b;
+  background-color: #536DFE;
 };
 
 
